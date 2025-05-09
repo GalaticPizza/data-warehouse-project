@@ -75,3 +75,7 @@ Construccion de un Data Warehouse con SQL Server, incluyendo procesos ETL, model
     - **Ejemplo:**
         - `load_bronze` → Procedimiento almacenado para cargar datos en la capa Bronze.
         - `load_silver` → Procedimiento almacenado para cargar datos en la capa Silver.
+
+### Diseño de la arquitectura de los Datos
+
+![Data warehouse - arquitectura](https://github.com/user-attachments/assets/e26fe7ae-8d8a-4e9f-a946-705bf130a809)
