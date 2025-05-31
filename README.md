@@ -47,7 +47,7 @@ Construccion de un Data Warehouse con SQL Server, incluyendo procesos ETL, model
 | Patrón | Significado | Ejemplo(s) |
 | --- | --- | --- |
 | `dim_` | Tabla de dimensión | `dim_customer`, `dim_product` |
-| `fact_` | Tabla de hechos | `fact_sales` |
+| `fact_` | Tabla de facturas | `fact_sales` |
 | `agg_` | Tabla agregada | `agg_customers`, `agg_sales_monthly` |
 
 ### Convenciones de Nombres de Columnas
