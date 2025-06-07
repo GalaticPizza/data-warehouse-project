@@ -3,17 +3,18 @@
 Construccion de un Data Warehouse con SQL Server, incluyendo procesos ETL, modelado de datos y analitica.
 
 ### Marco Teórico
+
 Arquitectura de Datos Medallion (Medallón).
 
 La Arquitectura de Datos Medallion es un patrón de diseño de datos utilizado para organizar lógicamente los datos en un Data WareHouse. Su objetivo es mejorar progresivamente la estructura y calidad de los datos a medida que fluyen a través de cada capa de la arquitectura, que generalmente se conocen como capas Bronce, Plata y Oro.
 
--Capa Bronce
+- Capa Bronce
     La capa Bronce es la etapa inicial donde se ingieren datos sin procesar de diversas fuentes, como almacenamiento en la nube, buses de mensajes y sistemas federados. Esta capa conserva el estado bruto de los datos en sus formatos originales y está destinada al consumo por cargas de trabajo que enriquecen los datos para las tablas Plata. Se realiza una validación mínima de datos en esta capa para evitar pérdidas de información.
     
--Capa Plata
+- Capa Plata
     La capa Plata es donde ocurre la limpieza y validación de datos. Los datos de la capa Bronce se leen, limpian y validan para crear un conjunto de datos más refinado. Esta capa incluye operaciones como la aplicación de esquemas, el manejo de valores nulos y faltantes, la eliminación de duplicados y la normalización. La capa Plata mejora la calidad de los datos al corregir errores e inconsistencias y estructura la información en un formato más accesible para su procesamiento posterior.
     
--Capa Oro
+- Capa Oro
     La capa Oro representa vistas altamente refinadas de los datos que impulsan análisis avanzados, paneles de control, aprendizaje automático (ML) y aplicaciones. Esta capa contiene datos agregados diseñados para análisis y generación de informes, alineándose con la lógica y necesidades del negocio. Está optimizada para el rendimiento en consultas y paneles, y proporciona conjuntos de datos con significado semántico que reflejan funciones empresariales.
 - Beneficios de la Arquitectura Medallion
     - Mejora incremental: La calidad y estructura de los datos se mejoran progresivamente a través de cada capa.
@@ -22,8 +23,9 @@ La Arquitectura de Datos Medallion es un patrón de diseño de datos utilizado p
     - Flexibilidad: Permite reprocesamiento y auditoría al conservar todos los datos históricos.
 
 Bibliografia (usada a modo de referencia adicional):
-    - https://www.databricks.com/glossary/medallion-architecture
-    - https://learn.microsoft.com/en-us/azure/databricks/lakehouse/medallion
+
+ - https://www.databricks.com/glossary/medallion-architecture
+ - https://learn.microsoft.com/en-us/azure/databricks/lakehouse/medallion
 
 # Convenciones para el proyecto de Almacen de datos
 
