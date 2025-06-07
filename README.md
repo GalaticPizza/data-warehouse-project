@@ -80,8 +80,14 @@ Construccion de un Data Warehouse con SQL Server, incluyendo procesos ETL, model
 
 ![Data warehouse - arquitectura](https://github.com/user-attachments/assets/e26fe7ae-8d8a-4e9f-a946-705bf130a809)
 
-## Construccion de las 3 capas de la arquitectura interna
-### Marco teorica del Data Flow:
+# Construccion de las 3 capas de la arquitectura
+
+## Capa de Bronce
+
+### Flujo de datos de la capa de Bronce (Bronze Layer)
+![image](https://github.com/user-attachments/assets/cceab668-4859-481d-a0ed-2e31f375a80e)
+
+### Marco teórico:
 En primera Instancia tendremos la capa de bronce con sus respectivo flujo de datos o data flow, donde tendremos los siguientes archivos:
 
 - Bronze_Layer scripts.sql: el cual es el encargado de crear las tablas dentro del DWH y de crear la estructura interna           correspondiente para luego realizar la inserción dentro de cada tabla de la BD.
@@ -89,10 +95,9 @@ En primera Instancia tendremos la capa de bronce con sus respectivo flujo de dat
 
 ### Pasos que deben llevarse a cabo en la construccion de la capa de bronce:
 
-### Flujo de datos de la capa de Bronce (Bronze Layer)
-![image](https://github.com/user-attachments/assets/cceab668-4859-481d-a0ed-2e31f375a80e)
-
 ## Capa de Plata
+### Flujo de datos de la capa de Plata (Silver Layer)
+![image](https://github.com/user-attachments/assets/351f435e-d1f5-4f14-bc71-98e1ae8858cd)
 
 ### Marco teórico
 
