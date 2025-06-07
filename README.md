@@ -79,3 +79,9 @@ Construccion de un Data Warehouse con SQL Server, incluyendo procesos ETL, model
 ### Diseño de la arquitectura de los Datos
 
 ![Data warehouse - arquitectura](https://github.com/user-attachments/assets/e26fe7ae-8d8a-4e9f-a946-705bf130a809)
+
+En primera Instancia tendremos la capa de bronce con sus respectivo flujo de datos o data flow:
+
+### Flujo de datos de la capa de Bronce (Bronze Layer)
+![image](https://github.com/user-attachments/assets/cceab668-4859-481d-a0ed-2e31f375a80e)
+
