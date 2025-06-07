@@ -112,7 +112,7 @@ Bibliografia (usada a modo de referencia adicional):
 ### Flujo de datos de la capa de Bronce (Bronze Layer)
 ![image](https://github.com/user-attachments/assets/cceab668-4859-481d-a0ed-2e31f375a80e)
 
-### Marco teórico:
+### Marco Práctico:
 En primera Instancia tendremos la capa de bronce con sus respectivo flujo de datos o data flow, donde tendremos los siguientes archivos:
 
 - Bronze_Layer scripts.sql: el cual es el encargado de crear las tablas dentro del DWH y de crear la estructura interna           correspondiente para luego realizar la inserción dentro de cada tabla de la BD.
@@ -124,7 +124,7 @@ En primera Instancia tendremos la capa de bronce con sus respectivo flujo de dat
 ### Flujo de datos de la capa de Plata (Silver Layer)
 ![image](https://github.com/user-attachments/assets/351f435e-d1f5-4f14-bc71-98e1ae8858cd)
 
-### Marco teórico
+### Marco Práctico:
 
 1. Analisis: es decir explorar y entender que datos se encuentran en nuestras fuentes de datos ya cargadas internamente dentro del data warehouse
 2. limpieza de los datos (data cleansing), 3 pasos
