@@ -85,6 +85,6 @@ Construccion de un Data Warehouse con SQL Server, incluyendo procesos ETL, model
 ### Base teorica del Data Flow:
 En primera Instancia tendremos la capa de bronce con sus respectivo flujo de datos o data flow, donde tendremos los siguientes archivos:
 
-    - Bronze_Layer scripts.sql: el cual es el encargado de crear las tablas dentro del DWH y de crear la estructura interna           correspondiente para luego realizar la inserción dentro de cada tabla de la BD.
-    - procedimiento_carga_bronce_sql: este mismo es quien se encarga de la fase de EXTRACCION del proceso ETL para la insercion de los datos en cada esquema de tabla, se lo realiza por medio de un procedimiento almacenado el cual permite automatizar la carga de los datos, dando informacion tanto del tiempo de ejecucion de cada tabla, como del procedimiento en general. A su vez permite realizar un proceso de cheking para corroborar si hubo algun error durante la carga y da avisos por pantalla.
+- Bronze_Layer scripts.sql: el cual es el encargado de crear las tablas dentro del DWH y de crear la estructura interna           correspondiente para luego realizar la inserción dentro de cada tabla de la BD.
+- procedimiento_carga_bronce_sql: este mismo es quien se encarga de la fase de EXTRACCION del proceso ETL para la insercion de los datos en cada esquema de tabla, se lo realiza por medio de un procedimiento almacenado el cual permite automatizar la carga de los datos, dando informacion tanto del tiempo de ejecucion de cada tabla, como del procedimiento en general. A su vez permite realizar un proceso de cheking para corroborar si hubo algun error durante la carga y da avisos por pantalla.
 
