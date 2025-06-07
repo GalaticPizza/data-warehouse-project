@@ -80,11 +80,26 @@ Construccion de un Data Warehouse con SQL Server, incluyendo procesos ETL, model
 
 ![Data warehouse - arquitectura](https://github.com/user-attachments/assets/e26fe7ae-8d8a-4e9f-a946-705bf130a809)
 
-### Flujo de datos de la capa de Bronce (Bronze Layer)
-![image](https://github.com/user-attachments/assets/cceab668-4859-481d-a0ed-2e31f375a80e)
-### Base teorica del Data Flow:
+## Construccion de las 3 capas de la arquitectura interna
+### Marco teorica del Data Flow:
 En primera Instancia tendremos la capa de bronce con sus respectivo flujo de datos o data flow, donde tendremos los siguientes archivos:
 
 - Bronze_Layer scripts.sql: el cual es el encargado de crear las tablas dentro del DWH y de crear la estructura interna           correspondiente para luego realizar la inserción dentro de cada tabla de la BD.
 - procedimiento_carga_bronce_sql: este mismo es quien se encarga de la fase de EXTRACCION del proceso ETL para la insercion de los datos en cada esquema de tabla, se lo realiza por medio de un procedimiento almacenado el cual permite automatizar la carga de los datos, dando informacion tanto del tiempo de ejecucion de cada tabla, como del procedimiento en general. A su vez permite realizar un proceso de cheking para corroborar si hubo algun error durante la carga y da avisos por pantalla.
 
+### Pasos que deben llevarse a cabo en la construccion de la capa de bronce:
+
+### Flujo de datos de la capa de Bronce (Bronze Layer)
+![image](https://github.com/user-attachments/assets/cceab668-4859-481d-a0ed-2e31f375a80e)
+
+## Capa de Plata
+
+### Marco teórico
+
+1. Analisis: es decir explorar y entender que datos se encuentran en nuestras fuentes de datos ya cargadas internamente dentro del data warehouse
+2. limpieza de los datos (data cleansing), 3 pasos
+    a. Check the quality of bronce o mejor dicho; verificar la calidad de datos de la capa de bronce, es decir primero intentar comprender que problemas tenemos con los datos antes de proceder con cualquier operacion de transformacion.
+    b. Write data transformations, es decir escribir procesos de limpieza de los datos, para solucionar todos los problemas de calidad de datos que hayan surgido del analisis anterior.
+    c. Insercion dentro de la capa de plata una vez que hayan sido limpiados.
+3. Validar la correctitud y completitud de los datos, hay que asegurarnos que una vez que hayan sido transformados y limpiados no surgan problemas de calidad, de existir alguno debemos volver al paso 2.
+4. Por ultimo siempre que sea posible y necesario el documentar todo cambio que se lleva a cabo en los procedimientos y pasos en cuanto a modelado de esquemas y codificacion de procedimientos.
