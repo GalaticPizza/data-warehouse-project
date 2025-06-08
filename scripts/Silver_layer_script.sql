@@ -6,12 +6,12 @@ IF OBJECT_ID('silver.crm_cust_info','U') IS NOT NULL
 CREATE TABLE silver.crm_cust_info(
 	cst_id				 INT,
 	cst_key				 NVARCHAR(50),
-	cst_firstname		 NVARCHAR(50),
-	cst_lastname		 NVARCHAR(50),
-	cst_marital_status	 NVARCHAR(50),
+	cst_firstname		 	 NVARCHAR(50),
+	cst_lastname			 NVARCHAR(50),
+	cst_marital_status		 NVARCHAR(50),
 	cst_gndr			 NVARCHAR(50),
-	cst_create_date		 DATETIME,
-	dwh_create_date		 DATETIME2 DEFAULT GETDATE()
+	cst_create_date			 DATE,
+	dwh_create_date			 DATETIME2 DEFAULT GETDATE()
 );
 -- ================================================
 IF OBJECT_ID('silver.crm_prd_info','U') IS NOT NULL
@@ -22,7 +22,7 @@ CREATE TABLE silver.crm_prd_info(
 	prd_nm		 NVARCHAR(50),
 	prd_cost	 INTEGER,
 	prd_line	 NVARCHAR(20),
-	prd_start_dt DATETIME,
+	prd_start_dt	 DATETIME,
 	prd_end_dt	 DATETIME,
 	dwh_create_date		 DATETIME2 DEFAULT GETDATE()
 );
