@@ -133,3 +133,4 @@ En primera Instancia tendremos la capa de bronce con sus respectivo flujo de dat
     c. Insercion dentro de la capa de plata una vez que hayan sido limpiados.
 3. Validar la correctitud y completitud de los datos, hay que asegurarnos que una vez que hayan sido transformados y limpiados no surgan problemas de calidad, de existir alguno debemos volver al paso 2.
 4. Por ultimo siempre que sea posible y necesario el documentar todo cambio que se lleva a cabo en los procedimientos y pasos en cuanto a modelado de esquemas y codificacion de procedimientos.
+![image](https://github.com/user-attachments/assets/b59881b2-eed7-4502-94b0-44cc766f54ad)
