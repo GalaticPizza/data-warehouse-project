@@ -3,7 +3,9 @@
     Verificacion de calidad
 ======================================================
     Proposito de los scripts:
-        Todos los comandos y clausulas SQL realizan varios controles de calidad para la consistencias de los datos, exactitud de la informacion dentro de las tablas, y la estandarizacion a lo largo del esquema de la capa de 'plata'. Los cuales incluyen entre otras cosas verificaciones para:
+        Todos los comandos y clausulas SQL realizan varios controles de calidad para la consistencias de los datos, 
+	exactitud de la informacion dentro de las tablas, y la estandarizacion a lo largo del esquema de la capa de 'plata'.
+	Los cuales incluyen entre otras cosas verificaciones para:
             - Null's o valores duplicados en las claves primarias
             - Espacios indeseados en cadenas de caracteres
             - Rangos de fechas y compras, ordenes invalidos
